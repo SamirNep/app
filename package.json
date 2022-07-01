@@ -1,9 +1,12 @@
 {
+  "homepage": "https://SamirNep.github.io/app",
   "name": "app",
   "version": "1.0.0",
   "description": "crud application",
   "main": "main.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
@@ -18,6 +21,7 @@
     "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "nodemon": "^2.0.18"
   }
 }
